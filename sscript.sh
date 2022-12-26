@@ -8,7 +8,7 @@ echo "error while installing"
 fi
 echo "python installed successfully"
 }
-bahave_install()
+behave_install()
 {
 sudo apt install python3-behave
 if [ $? -ne 0 ]; then
