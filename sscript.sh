@@ -10,7 +10,7 @@ echo "python installed successfully"
 }
 bahave_install()
 {
-sudo apt install python3-bahave
+sudo apt install python3-behave
 if [ $? -ne 0 ]; then
 echo "error while installing"
 fi
