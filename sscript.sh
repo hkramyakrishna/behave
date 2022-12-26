@@ -28,9 +28,9 @@ echo "behave files removed successfulyy"
 behave_steps()
 {
 echo "steps to run BDD"
-sudo mkdir -p /var/lib/jenkins/workspace/features/steps
-sudo cp -r ./test.feature /var/lib/jenkins/workspace/features
-sudo cp -r ./test.py /var/lib/jenkins/workspace/features/steps
+sudo mkdir -p /home/ubuntu/features/steps
+sudo cp -r ./test.feature /home/ubuntu/features
+sudo cp -r ./test.py /home/ubuntu/features/steps
 behave
 }
 python_install
