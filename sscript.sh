@@ -2,7 +2,7 @@
 echo "Installing behave"
 python_install()
 {
-sudo apt install python3
+sudo apt install python3 -y
 if [ $? -ne 0 ]; then
 echo "error while installing"
 fi
@@ -10,7 +10,7 @@ echo "python installed successfully"
 }
 behave_install()
 {
-sudo apt install python3-behave
+sudo apt install python3-behave -y
 if [ $? -ne 0 ]; then
 echo "error while installing"
 fi
