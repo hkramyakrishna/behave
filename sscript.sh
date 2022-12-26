@@ -25,7 +25,17 @@ echo " error while removing"
 fi
 echo "behave files removed successfulyy"
 }
+behave_steps()
+{
+        echo "steps to run BDD"
+        sudo mkdir -p /var/lib/jenkins/workspace/testbehave/features/steps
+        sudo cp -r ./test.feature /var/lib/jenkins/workspace/testbehave/features
+        sudo cp -r ./test.py /var/lib/jenkins/workspace/testbehave/features/steps
+        behave
+}
+
 
 python_install
 behave_install
 cleanup_workspace
+behave_steps
