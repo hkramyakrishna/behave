@@ -1,6 +1,6 @@
 from behave import *
 
-@given('we have behave installed')
+@given(u'we have behave insatlled')
 def step_impl(context):
     pass
 
