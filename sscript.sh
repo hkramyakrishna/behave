@@ -31,7 +31,7 @@ behave_steps()
         sudo mkdir -p /var/lib/jenkins/workspace/new/features/steps
         sudo cp -r ./test.feature /var/lib/jenkins/workspace/new/features
         sudo cp -r ./test.py /var/lib/jenkins/workspace/new/features/steps
-        cd /var/lib/jenkins/workspace/newb
+        cd /var/lib/jenkins/workspace/new
         behave
 }
 
